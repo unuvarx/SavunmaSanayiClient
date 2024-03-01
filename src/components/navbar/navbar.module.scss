@@ -6,7 +6,6 @@
   }
   .navbarBg {
     position: absolute;
-
     width: 100%;
     top: 0;
 
@@ -17,22 +16,33 @@
         background-color: #c4c4c4;
       }
       .profile {
+        padding: 4px;
+        
         display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
         align-items: center;
-        padding: 8px 0;
-
+        justify-content: flex-end;
         @media screen and (max-width: 1100px) {
-          justify-content: space-between;
+          justify-content: flex-start;
         }
-        div {
-          padding: 4px;
+        .container {
           display: flex;
+          flex-direction: row;
           align-items: center;
-          a {
-            font-size: 13px;
-            color: var(--grey-color);
+          color: var(--dark-color);
+
+          a,
+          span {
+            color: var(--dark-color);
+            font-size: 12px;
+            text-decoration: none;
+          }
+          div {
+            margin: 0 1rem;
+
+            img {
+              width: 1.2rem;
+              cursor: pointer;
+            }
           }
         }
       }
@@ -69,6 +79,10 @@
             flex-direction: column;
             align-items: flex-start;
             margin-top: 2rem;
+            background-color: var(--orange);
+            padding: 12px;
+            box-shadow: 0 4px 8px rgba(70, 20, 20, 13);
+            border-radius: 4px;
           }
           div {
             display: flex;
@@ -81,10 +95,17 @@
               font-size: 16px;
               color: var(--white-color);
               background-color: transparent;
+
               margin-left: 4px;
+              @media screen and (max-width: 1100px) {
+                margin: 0;
+                padding: 0;
+              }
             }
             @media screen and (max-width: 1100px) {
-              margin: 8px;
+              margin: 0;
+              margin-top: 1.5rem;
+              padding: 0;
             }
           }
           .active {

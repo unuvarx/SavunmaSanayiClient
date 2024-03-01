@@ -13,7 +13,6 @@ import { IoMail } from "react-icons/io5";
 import { IoIosTime } from "react-icons/io";
 
 export default function Footer() {
-  const router = useRouter();
   return (
     <div className={styles.footerContainer}>
       <span className={styles.title}> dilarasenel.com </span>
@@ -38,9 +37,9 @@ export default function Footer() {
         <div>
           <label> BİZE ULAŞIN </label>
           <span className={`${styles.div} ${styles.div2}`}>
-            <FaMapMarkerAlt size={25} />
+            <FaMapMarkerAlt size={20} />
             <span>
-              Macun Mahallesi, Erciyes İşyerleri Sitesi 200. Cadde No: 26
+              Macun Mahallesi, Erciyes İşyerleri Sitesi 200. Cadde No:26
               Yenimahalle / Ankara
             </span>
           </span>
@@ -51,7 +50,7 @@ export default function Footer() {
             <IoMail size={17} /> <span>sefaunuvar2002 @gmail.com </span>
           </span>
           <span className={`${styles.div} ${styles.div2}`}>
-            <IoIosTime size={25} />
+            <IoIosTime size={20} />
             <span>Pzt-Cum: 08:30–18:30 Cmt: 08:30–15:30</span>
           </span>
         </div>

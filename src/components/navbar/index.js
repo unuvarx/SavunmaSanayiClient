@@ -56,11 +56,11 @@ export default function Navbar() {
     });
   };
   const OpenAndClose = () => {
-    if (windowWidth <= 918) {
+    if (windowWidth <= 1100) {
       if (navbarControl) {
-        return <AiOutlineMenu onClick={handleOpenNavbar} />;
+        return <AiOutlineMenu onClick={handleOpenNavbar} size={30} />;
       } else {
-        return <AiOutlineClose onClick={handleCloseNavbar} />;
+        return <AiOutlineClose onClick={handleCloseNavbar} size={30} />;
       }
     } else {
       const navbar = navbarRef.current;
@@ -86,10 +86,8 @@ export default function Navbar() {
   }, [windowWidth]);
   const calculateImageHeight = () => {
     if (windowWidth <= 1500) {
-      // Eğer pencere genişliği 918 pikselden küçükse, height'i 25rem olarak ayarla.
-      return "30rem";
+      return "35rem";
     } else {
-      // Eğer pencere genişliği 918 pikselden büyükse, 1500'den fazlaysa her 200 pikselden bir 5 rem arttır.
       const additionalHeight = Math.floor((windowWidth - 1500) / 200) * 5;
       return `calc(25rem + ${additionalHeight}rem)`;
     }
@@ -105,10 +103,32 @@ export default function Navbar() {
       <div className={styles.navbarBg}>
         <div className={styles.navbarContext}>
           <div className={styles.profile}>
+            {windowWidth <= 1100 ? (
+              <></>
+            ) : (
+              <div className={styles.container}>
+                <div>
+                  <a href="">dilarasenel.com</a>
+                </div>
+                |
+                <div>
+                  <span>+90 322 397 91 11</span>
+                </div>
+                |
+                <div>
+                  <span>Adana/Türkiye</span>
+                </div>
+                |
+                <div>
+                  <img src="/images/turkey.jpg" alt="" />
+                </div>
+                |
+                <div>
+                  <img src="/images/england.jpg" alt="" />
+                </div>
+              </div>
+            )}
             <OpenAndClose />
-            <div>
-              <a href="/profile"> ddd </a> <AiOutlineUser />
-            </div>
           </div>
           <div className={styles.hr}></div>
           <div className={styles.navbar} ref={navbarRef}>
