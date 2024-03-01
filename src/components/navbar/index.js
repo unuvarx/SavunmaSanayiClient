@@ -10,7 +10,7 @@ import {
   AiOutlineMenu,
   AiOutlineClose,
 } from "react-icons/ai";
-import { gsap } from "gsap";
+import { Power1, gsap } from "gsap";
 import { useRouter } from "next/router";
 
 export default function Navbar() {
@@ -41,8 +41,9 @@ export default function Navbar() {
     const navbar = navbarRef.current;
     gsap.to(navbar, {
       x: 0,
-      duration: 0.6,
+      duration: 0.3,
       opacity: 1,
+      ease: Power1.easeInOut
     });
   };
   const handleCloseNavbar = () => {
@@ -51,8 +52,9 @@ export default function Navbar() {
 
     gsap.to(navbar, {
       x: -500,
-      duration: 0.8,
-      opacity: 1,
+      duration: 0.3,
+      opacity: 0,
+      ease: Power1.easeInOut
     });
   };
   const OpenAndClose = () => {
@@ -66,8 +68,9 @@ export default function Navbar() {
       const navbar = navbarRef.current;
       gsap.to(navbar, {
         x: 0,
-        duration: 0.8,
+        duration: 0.3,
         opacity: 1,
+        ease: Power1.easeInOut
       });
 
       return <> </>;
@@ -79,8 +82,9 @@ export default function Navbar() {
       const navbar = navbarRef.current;
       gsap.to(navbar, {
         x: 0,
-        duration: 0.8,
+        duration: 0.3,
         opacity: 1,
+        ease: Power1.easeInOut
       });
     }
   }, [windowWidth]);
