@@ -1,20 +1,21 @@
+:root {
+  --background-color: #aaaaaa;
+  --dark-background-color: #222;
+  --dark-color: #222;
+  --white-color: #ffffff;
+  --red-color: #c72931;
+  --grey-color: rgb(213, 213, 213);
+  --orange: rgb(220,135,61);
+}
 body {
-    padding: 0;
-    border: 0;
-    border-radius: 0;
-    margin: 0;
-   
-  }
-  :root {
-    /* --background-color: #354249;
-    --dark-background-color: #303A40;
-    --dark-color: #283035;
-    --white-color: #ffffff;
-    --red-color: #C72931;
-    --grey-color: rgb(200, 200, 200); */
-  }
-  * {
-    background-color: var(--background-color);
-    font-family: 'Poppins', sans-serif;
-    transition: all 0.2s;
-  }
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  margin: 0;
+}
+
+* {
+  
+  font-family: "Poppins", sans-serif;
+  transition: all 0.2s;
+}

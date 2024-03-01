@@ -1,0 +1,134 @@
+.navbarContainer {
+  .f16Img {
+    width: -webkit-fill-available;
+    object-fit: cover;
+    height: 25rem;
+  }
+  .navbarBg {
+    position: absolute;
+
+    width: 100%;
+    top: 0;
+
+    .navbarContext {
+      .hr {
+        height: 0.5px;
+        margin-bottom: 8px;
+        background-color: #c4c4c4;
+      }
+      .profile {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 8px 0;
+
+        @media screen and (max-width: 1100px) {
+          justify-content: space-between;
+        }
+        div {
+          padding: 4px;
+          display: flex;
+          align-items: center;
+          a {
+            font-size: 13px;
+            color: var(--grey-color);
+          }
+        }
+      }
+      .navbar {
+        // background: ;
+        padding: 8px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        height: -webkit-fill-available;
+
+        @media screen and (max-width: 1100px) {
+          flex-direction: column;
+          align-items: flex-start;
+          width: 15rem;
+          height: -webkit-fill-available;
+          justify-content: flex-start;
+          position: absolute;
+          z-index: 999999999;
+        }
+        @media screen and (max-width: 494px) {
+          width: -webkit-fill-available;
+        }
+
+        .pagesContainer {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 80%;
+          background-color: transparent;
+          @media screen and (max-width: 1100px) {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 2rem;
+          }
+          div {
+            display: flex;
+
+            background-color: transparent;
+            padding: 5px;
+            cursor: pointer;
+
+            span {
+              font-size: 16px;
+              color: var(--white-color);
+              background-color: transparent;
+              margin-left: 4px;
+            }
+            @media screen and (max-width: 1100px) {
+              margin: 8px;
+            }
+          }
+          .active {
+            border-bottom: 2px solid var(--red-color);
+
+            span {
+              color: var(--grey-color);
+            }
+          }
+          .deActive {
+            span,
+            svg {
+              transition-duration: 0.2s;
+              height: 100%;
+            }
+          }
+          .deActive:hover {
+            svg {
+              color: var(--grey-color);
+            }
+            span {
+              color: var(--grey-color);
+            }
+          }
+          .img {
+            display: flex;
+            justify-content: center;
+            background-color: transparent;
+
+            padding: 0;
+            @media screen and (max-width: 1100px) {
+              flex-direction: column;
+              width: -webkit-fill-available;
+            }
+            img {
+              width: 4rem;
+              height: 2rem;
+              object-fit: fill;
+
+              background-color: transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+}
