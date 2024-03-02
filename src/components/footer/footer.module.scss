@@ -47,7 +47,6 @@
     @media screen and (max-width: 1018px) {
       flex-direction: column;
     }
-   
 
     label {
       font-size: 1.5rem;
@@ -82,11 +81,35 @@
     .media {
       flex-direction: row;
       justify-content: space-between;
-      
+
       width: -webkit-fill-available;
       a {
-       
         margin: 0.5rem 1rem 0.5rem 0rem;
+      }
+      #wp {
+        svg {
+          color: #25D366;
+        }
+        svg:hover {
+          color: var(--white-color)
+        }
+        
+      }
+      #ig {
+        svg {
+          color: #DD2A7B;
+        }
+        svg:hover {
+          color: var(--white-color);
+        }
+      }
+      #x {
+        svg {
+          color: #1DA1F2;
+        }
+        svg:hover {
+          color: var(--white-color)
+        }
       }
     }
     .div2 {
@@ -101,7 +124,6 @@
         color: var(--background-color);
       }
     }
-  
   }
   .hr {
     height: 1px;

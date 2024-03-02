@@ -87,14 +87,14 @@ export default function Footer() {
         <div>
           <label> MEDYA </label>{" "}
           <span className={`${styles.div} ${styles.media}`}>
-            <a href="">
-              <FaWhatsapp size={25} color="#25D366" />
+            <a href="" id={styles.wp}>
+              <FaWhatsapp size={25}  />
             </a>{" "}
-            <a href="">
-              <FaInstagram size={25} color="#FD1D1D" />
+            <a href="" id={styles.ig}>
+              <FaInstagram size={25} />
             </a>{" "}
-            <a href="">
-              <LuTwitter size={25} color="#1DA1F2" />
+            <a href="" id={styles.x}>
+              <LuTwitter size={25}  />
             </a>{" "}
           </span>
         </div>{" "}

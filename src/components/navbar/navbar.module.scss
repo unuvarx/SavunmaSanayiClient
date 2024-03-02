@@ -81,8 +81,10 @@
             margin-top: 2rem;
             background-color: var(--dark-color);
             padding: 12px;
-            box-shadow: 0 4px 8px rgba(70, 20, 20, 13);
+            box-shadow: 0 4px 8px rgba(10, 20, 20, 13);
+            
             border-radius: 4px;
+            width: -webkit-fill-available;
           }
           div {
             display: flex;
