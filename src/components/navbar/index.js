@@ -43,7 +43,7 @@ export default function Navbar() {
       x: 0,
       duration: 0.3,
       opacity: 1,
-      ease: Power1.easeInOut
+      ease: Power1.easeInOut,
     });
   };
   const handleCloseNavbar = () => {
@@ -54,7 +54,7 @@ export default function Navbar() {
       x: -500,
       duration: 0.3,
       opacity: 0,
-      ease: Power1.easeInOut
+      ease: Power1.easeInOut,
     });
   };
   const OpenAndClose = () => {
@@ -70,7 +70,7 @@ export default function Navbar() {
         x: 0,
         duration: 0.3,
         opacity: 1,
-        ease: Power1.easeInOut
+        ease: Power1.easeInOut,
       });
 
       return <> </>;
@@ -84,13 +84,17 @@ export default function Navbar() {
         x: 0,
         duration: 0.3,
         opacity: 1,
-        ease: Power1.easeInOut
+        ease: Power1.easeInOut,
       });
     }
   }, [windowWidth]);
   const calculateImageHeight = () => {
     if (windowWidth <= 1500) {
-      return "35rem";
+      if (windowWidth <= 1100) {
+        return "15rem";
+      } else {
+        return "35rem";
+      }
     } else {
       const additionalHeight = Math.floor((windowWidth - 1500) / 200) * 5;
       return `calc(25rem + ${additionalHeight}rem)`;
@@ -107,12 +111,21 @@ export default function Navbar() {
       <div className={styles.navbarBg}>
         <div className={styles.navbarContext}>
           <div className={styles.profile}>
+            <OpenAndClose />
             {windowWidth <= 1100 ? (
-              <></>
+              <div className={styles.container}>
+                <div>
+                  <img src="/images/turkey.jpg" alt="" />
+                </div>
+                |
+                <div>
+                  <img src="/images/england.jpg" alt="" />
+                </div>
+              </div>
             ) : (
               <div className={styles.container}>
                 <div>
-                  <a href="">dilarasenel.com</a>
+                  <a href="">tdsengineering.com</a>
                 </div>
                 |
                 <div>
@@ -132,7 +145,6 @@ export default function Navbar() {
                 </div>
               </div>
             )}
-            <OpenAndClose />
           </div>
           <div className={styles.hr}></div>
           <div className={styles.navbar} ref={navbarRef}>
@@ -142,7 +154,7 @@ export default function Navbar() {
               </div>
               <div
                 onClick={() => {
-                  router.push("/sales");
+                  router.push("/anasayfa");
                 }}
                 className={url === "/sales" ? styles.active : styles.deActive}
               >
