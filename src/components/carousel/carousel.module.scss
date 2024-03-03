@@ -44,7 +44,7 @@
     
       display: flex;
       justify-content: center;
-      background-color: var(--dark-color);
+      background-color: var(--grey-color);
       width: -webkit-fill-available;
       border-radius: 8px;
       text-align: center;
@@ -57,7 +57,7 @@
       }
       
       span {
-        color: var(--grey-color);
+        color: var(--dark-color);
         font-weight: bold;
         font-size: 1rem;
         @media screen and  (max-width: 750px){

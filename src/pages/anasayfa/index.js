@@ -6,6 +6,7 @@ import Carousel from "@/components/carousel";
 import { gsap, Power1 } from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import DescriptionCarousel from "@/components/descriptionCarousel";
+import Slider from "@/components/slider";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -97,12 +98,7 @@ export default function Anasayfa() {
           </div>
           <DescriptionCarousel />
         </div>
-        <div className={styles.carouselCont}>
-          <div className={styles.title}> Basında Biz </div>
-          <div className={styles.carousel}>
-            <Carousel />
-          </div>
-        </div>
+        
         <div className={styles.about}>
           <img
             ref={aboutLeftRef}
@@ -147,6 +143,12 @@ export default function Anasayfa() {
             <button> Daha Fazla </button>
           </div>
         </div>
+        <div className={styles.carouselCont}>
+          <div className={styles.title}> Basında Biz </div>
+          <div className={styles.carousel}>
+            <Carousel />
+          </div>
+        </div>
         <div className={styles.wrapper} ref={wrapperRef}>
           <div>
             <img src="/images/musteri-memnuniyeti.png" alt="" />
@@ -168,6 +170,27 @@ export default function Anasayfa() {
             <span>MEMNUNİYET</span>
             <label htmlFor="">Bize gelenlerde 100% memnuniyet garantisi veriyoruz.</label>
           </div>
+        </div>
+        <div className={styles.partners}>
+          <div className={styles.title}>Partnerler</div>
+          <Slider />
+        </div>
+        <div className={styles.connect}>
+           <img src="/images/connect.jpg" alt="" />
+           <div className={styles.context}>
+            <span>Bu formu doldurun ve 24 saat içinde sizinle iletişim kuralım!</span>
+              <div>
+                <input type="text" placeholder="Ad" />
+                <input type="text" placeholder="Soyad" />
+                <input type="text" placeholder="Tel" />
+                <input type="text" placeholder="E-Posta" />
+                <input type="text" placeholder="Ülke" />
+                <input type="text" placeholder="Şehir" />
+                <textarea placeholder="Mesajınız" id="" ></textarea>
+              </div>
+              <button>Gönder</button>
+              
+           </div>
         </div>
       </div>
     </Layout>

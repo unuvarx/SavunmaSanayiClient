@@ -36,14 +36,35 @@ export default function DescriptionCarousel() {
               name="slides"
               checked={selectedSlide === 2}
               onChange={() => setSelectedSlide(2)}
-              id={`slide1`}
+              id={`slide2`}
             />
             <input
               type="radio"
               name="slides"
               checked={selectedSlide === 3}
               onChange={() => setSelectedSlide(3)}
-              id={`slide1`}
+              id={`slide3`}
+            />
+            <input
+              type="radio"
+              name="slides"
+              checked={selectedSlide === 4}
+              onChange={() => setSelectedSlide(4)}
+              id={`slide4`}
+            />
+            <input
+              type="radio"
+              name="slides"
+              checked={selectedSlide === 5}
+              onChange={() => setSelectedSlide(5)}
+              id={`slide5`}
+            />
+            <input
+              type="radio"
+              name="slides"
+              checked={selectedSlide === 6}
+              onChange={() => setSelectedSlide(6)}
+              id={`slide6`}
             />
             <ul className={styles.carouselSlides}>
               <li
@@ -59,8 +80,11 @@ export default function DescriptionCarousel() {
                     />
                   </div>
                   <figcaption>
-                   ccccccccccccc
-                    <span className={styles.credit}> Photo: Tim Marshall </span>{" "}
+                    ccccccccccccc
+                    <span className={styles.credit}>
+                      {" "}
+                      Photo: Tim Marshall{" "}
+                    </span>{" "}
                   </figcaption>
                 </figure>
               </li>
@@ -106,6 +130,69 @@ export default function DescriptionCarousel() {
                   </figcaption>
                 </figure>
               </li>
+              <li
+                className={`${styles.carouselSlide} ${
+                  selectedSlide === 4 ? styles.scrollable : ""
+                }`}
+              >
+                <figure>
+                  <div>
+                    <img
+                      src={`https://picsum.photos/id/1041/800/450?index=4`}
+                      alt=""
+                    />
+                  </div>
+                  <figcaption>
+                    ccccccccccccc
+                    <span className={styles.credit}>
+                      {" "}
+                      Photo: Tim Marshall{" "}
+                    </span>{" "}
+                  </figcaption>
+                </figure>
+              </li>
+              <li
+                className={`${styles.carouselSlide} ${
+                  selectedSlide === 5 ? styles.scrollable : ""
+                }`}
+              >
+                <figure>
+                  <div>
+                    <img
+                      src={`https://picsum.photos/id/1041/800/450?index=5`}
+                      alt=""
+                    />
+                  </div>
+                  <figcaption>
+                    ccccccccccccc
+                    <span className={styles.credit}>
+                      {" "}
+                      Photo: Tim Marshall{" "}
+                    </span>{" "}
+                  </figcaption>
+                </figure>
+              </li>
+              <li
+                className={`${styles.carouselSlide} ${
+                  selectedSlide === 6 ? styles.scrollable : ""
+                }`}
+              >
+                <figure>
+                  <div>
+                    <img
+                      src={`https://picsum.photos/id/1041/800/450?index=6`}
+                      alt=""
+                    />
+                  </div>
+                  <figcaption>
+                    ccccccccccccc
+                    <span className={styles.credit}>
+                      {" "}
+                      Photo: Tim Marshall{" "}
+                    </span>{" "}
+                  </figcaption>
+                </figure>
+              </li>
             </ul>
             <ul className={styles.carouselThumbnails}>
               <li>
@@ -137,6 +224,39 @@ export default function DescriptionCarousel() {
                 >
                   <img
                     src={`https://picsum.photos/id/1041/150/150?index=3`}
+                    alt=""
+                  />
+                </label>
+              </li>
+              <li>
+                <label
+                  htmlFor={`slide4`}
+                  onClick={(event) => handleThumbnailClick(event,4)}
+                >
+                  <img
+                    src={`https://picsum.photos/id/1041/150/150?index=4`}
+                    alt=""
+                  />
+                </label>
+              </li>
+              <li>
+                <label
+                  htmlFor={`slide5`}
+                  onClick={(event) => handleThumbnailClick(event, 5)}
+                >
+                  <img
+                    src={`https://picsum.photos/id/1041/150/150?index=5`}
+                    alt=""
+                  />
+                </label>
+              </li>
+              <li>
+                <label
+                  htmlFor={`slide6`}
+                  onClick={(event) => handleThumbnailClick(event, 6)}
+                >
+                  <img
+                    src={`https://picsum.photos/id/1041/150/150?index=6`}
                     alt=""
                   />
                 </label>
