@@ -18,94 +18,95 @@ import { LuTwitter } from "react-icons/lu";
 export default function Footer() {
   return (
     <div className={styles.footerContainer}>
-      <span className={styles.title}> tdsengineering.com </span>{" "}
+      <span className={styles.title}> tdsengineering.com </span>
       <div className={styles.footerPages}>
-        <a href="/anasayfa"> Anasayfa </a>{" "}
+        <a href="/homepage"> Anasayfa </a>
+        <a
+          href="/about
+    "
+        >
+          Hakkımızda
+        </a>
+        <a href="/products"> Ürünler </a>
         <a
           href="/#
     "
         >
-          {" "}
-          Hakkımızda{" "}
-        </a>{" "}
-        <a href="/#"> Ürünler </a>{" "}
+          Partnerlerimiz
+        </a>
+        <a href="/partners"> Basında Biz </a>
         <a
           href="/#
     "
         >
-          {" "}
-          Partnerlerimiz{" "}
-        </a>{" "}
-        <a href="/#"> Basında Biz </a>{" "}
-        <a
-          href="/#
-    "
-        >
-          {" "}
-          Sertifikalarımız{" "}
-        </a>{" "}
-        <a href="/#"> Bize Ulaşın </a>{" "}
-      </div>{" "}
+          Sertifikalarımız
+        </a>
+        <a href="/#"> Bize Ulaşın </a>
+      </div>
       <div className={styles.icons}>
         <div>
-          <label> BASINDA BİZ </label>{" "}
+          <label> BASINDA BİZ </label>
           <span className={styles.div}>
-            <span> 01 / 02 / 2024 </span>{" "}
-            <a href="/#">
-              {" "}
-              IDEF’ 23 16’ ncı Uluslararası Savunma Sanayii Fuarı{" "}
-            </a>{" "}
-          </span>{" "}
+            <span> 01 / 02 / 2024 </span>
+            <a href="/#">IDEF’ 23 16’ ncı Uluslararası Savunma Sanayii Fuarı</a>
+          </span>
           <span className={styles.div}>
-            <span> 01 / 02 / 2024 </span>{" "}
-            <a href="/#">
-              {" "}
-              IDEF’ 23 16’ ncı Uluslararası Savunma Sanayii Fuarı{" "}
-            </a>{" "}
-          </span>{" "}
+            <span> 01 / 02 / 2024 </span>
+            <a href="/#">IDEF’ 23 16’ ncı Uluslararası Savunma Sanayii Fuarı</a>
+          </span>
         </div>
         <div>
-          <label> BİZE ULAŞIN </label>{" "}
+          <label> BİZE ULAŞIN </label>
           <span className={`${styles.div} ${styles.div2}`}>
-            <FaMapMarkerAlt size={20} />{" "}
+            <label htmlFor="">
+              <FaMapMarkerAlt size={15} />
+            </label>
             <span>
               Macun Mahallesi, Erciyes İşyerleri Sitesi 200. Cadde No: 26
-              Yenimahalle / Ankara{" "}
-            </span>{" "}
-          </span>{" "}
+              Yenimahalle / Ankara
+            </span>
+          </span>
           <span className={`${styles.div} ${styles.div2}`}>
-            <FaPhoneAlt size={15} /> <span>+90 05365813398 </span>
-          </span>{" "}
+            <label htmlFor="">
+              <FaPhoneAlt size={15} />
+            </label>
+            <span>+90 05365813398 </span>
+          </span>
           <span className={`${styles.div} ${styles.div2}`}>
-            <IoMail size={17} /> <span>sefaunuvar2002 @gmail.com </span>
-          </span>{" "}
+            <label htmlFor="">
+              <IoMail size={15} />
+            </label>
+            <span>sefaunuvar2002 @gmail.com </span>
+          </span>
           <span className={`${styles.div} ${styles.div2}`}>
-            <IoIosTime size={20} />{" "}
-            <span> Pzt - Cum: 08: 30– 18: 30 Cmt: 08: 30– 15: 30 </span>{" "}
-          </span>{" "}
-        </div>{" "}
+            <label htmlFor="">
+              <IoIosTime size={15} />
+            </label>
+            <span> Pzt - Cum: 08: 30– 18: 30 Cmt: 08: 30– 15: 30 </span>
+          </span>
+        </div>
         <div>
-          <label> MEDYA </label>{" "}
+          <label> MEDYA </label>
           <span className={`${styles.div} ${styles.media}`}>
             <a href="" id={styles.wp}>
-              <FaWhatsapp size={25}  />
-            </a>{" "}
+              <FaWhatsapp size={25} />
+            </a>
             <a href="" id={styles.ig}>
               <FaInstagram size={25} />
-            </a>{" "}
+            </a>
             <a href="" id={styles.x}>
-              <LuTwitter size={25}  />
-            </a>{" "}
+              <LuTwitter size={25} />
+            </a>
           </span>
-        </div>{" "}
-      </div>{" "}
-      <div className={styles.hr}> </div>{" "}
+        </div>
+      </div>
+      <div className={styles.hr}> </div>
       <div className={styles.foot}>
         <span>
-          Copyright© <label htmlFor=""> tdsengineering.com </label> 2023 tüm hakları
-          saklıdır.{" "}
-        </span>{" "}
-      </div>{" "}
+          Copyright© <label htmlFor=""> tdsengineering.com </label> 2023 tüm
+          hakları saklıdır.
+        </span>
+      </div>
     </div>
   );
 }

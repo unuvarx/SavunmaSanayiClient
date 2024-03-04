@@ -111,10 +111,11 @@
             }
           }
           .active {
-            border-bottom: 2px solid var(--red-color);
+            
 
             span {
-              color: var(--grey-color);
+              color: var(--dark-color);
+              font-weight: bold;
             }
           }
           .deActive {

@@ -1,6 +1,6 @@
 import Layout from "@/lib/layout";
 import React, { useState, useEffect, useRef } from "react";
-import styles from "@/pages/anasayfa/anasayfa.module.scss";
+import styles from "@/pages/homepage/homepage.module.scss";
 import Spinner from "@/components/spinner";
 import Carousel from "@/components/carousel";
 import { gsap, Power1 } from "gsap";

@@ -154,38 +154,38 @@ export default function Navbar() {
               </div>
               <div
                 onClick={() => {
-                  router.push("/anasayfa");
+                  router.push("/homepage");
                 }}
-                className={url === "/sales" ? styles.active : styles.deActive}
+                className={url === "/" || url === "/homepage" ? styles.active : styles.deActive}
               >
                 <span> ANASAYFA </span>
               </div>
               <div
                 onClick={() => {
-                  router.push("/sales-history");
+                  router.push("/about");
                 }}
                 className={
-                  url === "/sales-history" ? styles.active : styles.deActive
+                  url === "/about" ? styles.active : styles.deActive
                 }
               >
                 <span> HAKKIMIZDA </span>
               </div>
               <div
                 onClick={() => {
-                  router.push("/products-list");
+                  router.push("/products");
                 }}
                 className={
-                  url === "/products-list" ? styles.active : styles.deActive
+                  url === "/products" ? styles.active : styles.deActive
                 }
               >
                 <span>ÜRÜNLER</span>
               </div>
               <div
                 onClick={() => {
-                  router.push("/add-product");
+                  router.push("/partners");
                 }}
                 className={
-                  url === "/add-product" ? styles.active : styles.deActive
+                  url === "/partners" ? styles.active : styles.deActive
                 }
               >
                 <span> PARTNERLERİMİZ </span>
