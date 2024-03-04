@@ -2,11 +2,27 @@ import Layout from "@/lib/layout";
 import React, { useEffect, useRef } from "react";
 import styles from "@/pages/about/about.module.scss";
 import { IoMdInformationCircleOutline } from "react-icons/io";
+import {gsap, Power1} from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
+gsap.registerPlugin(ScrollTrigger);
 export default function About() {
   const aboutRef = useRef(null);
 
-  
+  useEffect(() => {
+    gsap.from(aboutRef.current, {
+        y: 100,
+        duration: 0.5,
+        opacity: 0,
+        ease: Power1.easeout,
+        scrollTrigger: {
+          trigger: aboutRef.current,
+          start: "top center",
+          end: "top center",
+          scrub: 2,
+        },
+      });
+  }, [])
 
   return (
     <Layout>

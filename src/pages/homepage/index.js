@@ -20,14 +20,14 @@ export default function Anasayfa() {
 
   useEffect(() => {
     gsap.from(navbarRef.current, {
-      y: 10,
+      y: 100,
       duration: 0.5,
       opacity: 0,
       ease: Power1.easeout,
       scrollTrigger: {
         trigger: ataturkRef.current,
         start: "top center",
-        end: "bottom center",
+        end: "top center",
         scrub: 2,
       },
     });

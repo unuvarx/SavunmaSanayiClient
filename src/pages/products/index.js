@@ -1,14 +1,22 @@
 import Layout from "@/lib/layout";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import styles from "@/pages/products/products.module.scss";
 import ProductCard from "@/components/productCard";
 
 export default function Products() {
+
+
+
+
+
+  
+
   return (
     <Layout>
-        <div className={styles.title}>ÜRÜNLER</div>
+      <div className={styles.title}>ÜRÜNLER</div>
       <div className={styles.productsContainer}>
         <ProductCard
+         
           imageUrl={`/ak47.jpg`}
           title={`Avtomat Kalaşnikova-47`}
           description={`
@@ -19,6 +27,7 @@ export default function Products() {
           imageIsRight={false}
         />{" "}
         <ProductCard
+        
           imageUrl={`/aug.jpg`}
           title={`Steyr Aug`}
           description={`
@@ -30,6 +39,7 @@ export default function Products() {
           imageIsRight={true}
         />{" "}
         <ProductCard
+        
           imageUrl={`/awp.jpg`}
           title={`Accuracy International Arctic Warfare`}
           description={`
@@ -41,6 +51,7 @@ export default function Products() {
           imageIsRight={false}
         />{" "}
         <ProductCard
+        
           imageUrl={`/deagle.jpg`}
           title={`IMI Desert Eagle`}
           description={`
@@ -52,6 +63,7 @@ export default function Products() {
           imageIsRight={true}
         />
         <ProductCard
+        
           imageUrl={`/kanas.jpg`}
           title={`Dragunov`}
           description={`
@@ -67,6 +79,7 @@ export default function Products() {
           imageIsRight={false}
         />
         <ProductCard
+        
           imageUrl={`/pompali.jpg`}
           title={`Pompalı Silah`}
           description={`
