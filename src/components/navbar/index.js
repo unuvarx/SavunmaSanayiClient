@@ -156,7 +156,11 @@ export default function Navbar() {
                 onClick={() => {
                   router.push("/homepage");
                 }}
-                className={url === "/" || url === "/homepage" ? styles.active : styles.deActive}
+                className={
+                  url === "/" || url === "/homepage"
+                    ? styles.active
+                    : styles.deActive
+                }
               >
                 <span> ANASAYFA </span>
               </div>
@@ -164,9 +168,7 @@ export default function Navbar() {
                 onClick={() => {
                   router.push("/about");
                 }}
-                className={
-                  url === "/about" ? styles.active : styles.deActive
-                }
+                className={url === "/about" ? styles.active : styles.deActive}
               >
                 <span> HAKKIMIZDA </span>
               </div>
@@ -192,27 +194,25 @@ export default function Navbar() {
               </div>
               <div
                 onClick={() => {
-                  router.push("/sales-history");
+                  router.push("/media");
                 }}
-                className={
-                  url === "/sales-history" ? styles.active : styles.deActive
-                }
+                className={url === "/media" ? styles.active : styles.deActive}
               >
                 <span> BASINDA BİZ </span>
               </div>
               <div
                 onClick={() => {
-                  router.push("/sales-history");
+                  router.push("/certificates");
                 }}
                 className={
-                  url === "/sales-history" ? styles.active : styles.deActive
+                  url === "/certificates" ? styles.active : styles.deActive
                 }
               >
                 <span> SERTİFİKALARIMIZ </span>
               </div>
               <div
                 onClick={() => {
-                  router.push("/sales-history");
+                  router.push("/certificates");
                 }}
                 className={
                   url === "/sales-history" ? styles.active : styles.deActive

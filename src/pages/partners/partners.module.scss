@@ -1,0 +1,39 @@
+.partnersContainer {
+  padding: 7rem;
+  @media screen and (max-width: 605px) {
+    padding: 1rem;
+  }
+  .partners {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    div {
+      padding: 2rem;
+      border: 2px dotted var(--background-color);
+      margin: 2rem;
+      width: 15rem;
+      height: 15rem;
+      @media screen and (max-width: 605px) {
+        padding: 1rem;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  .title {
+    font-size: 3rem;
+    color: var(--orange);
+    text-align: center;
+    @media screen and (max-width: 750px) {
+      font-size: 1.5rem;
+    }
+    @media screen and (max-width: 500px) {
+      font-size: 1.3rem;
+    }
+  }
+}

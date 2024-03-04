@@ -29,14 +29,14 @@ export default function Footer() {
         </a>
         <a href="/products"> Ürünler </a>
         <a
-          href="/#
+          href="/partners
     "
         >
           Partnerlerimiz
         </a>
-        <a href="/partners"> Basında Biz </a>
+        <a href="/media"> Basında Biz </a>
         <a
-          href="/#
+          href="/certificates
     "
         >
           Sertifikalarımız

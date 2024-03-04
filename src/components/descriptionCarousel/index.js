@@ -75,7 +75,7 @@ export default function DescriptionCarousel() {
                 <figure>
                   <div>
                     <img
-                      src={`https://picsum.photos/id/1041/800/450?index=1`}
+                      src={`/images/ak47.jpg`}
                       alt=""
                     />
                   </div>
@@ -96,7 +96,7 @@ export default function DescriptionCarousel() {
                 <figure>
                   <div>
                     <img
-                      src={`https://picsum.photos/id/1041/800/450?index=1`}
+                      src={`/images/aug.jpg`}
                       alt=""
                     />
                   </div>
@@ -117,7 +117,7 @@ export default function DescriptionCarousel() {
                 <figure>
                   <div>
                     <img
-                      src={`https://picsum.photos/id/1041/800/450?index=2`}
+                      src={`/images/awp.jpg`}
                       alt=""
                     />
                   </div>
@@ -138,7 +138,7 @@ export default function DescriptionCarousel() {
                 <figure>
                   <div>
                     <img
-                      src={`https://picsum.photos/id/1041/800/450?index=4`}
+                      src={`images/deagle.jpg`}
                       alt=""
                     />
                   </div>
@@ -159,7 +159,7 @@ export default function DescriptionCarousel() {
                 <figure>
                   <div>
                     <img
-                      src={`https://picsum.photos/id/1041/800/450?index=5`}
+                      src={`images/kanas.jpg`}
                       alt=""
                     />
                   </div>
@@ -180,7 +180,7 @@ export default function DescriptionCarousel() {
                 <figure>
                   <div>
                     <img
-                      src={`https://picsum.photos/id/1041/800/450?index=6`}
+                      src={`images/pompali.jpg`}
                       alt=""
                     />
                   </div>
@@ -201,7 +201,7 @@ export default function DescriptionCarousel() {
                   onClick={(event) => handleThumbnailClick(event, 1)}
                 >
                   <img
-                    src={`https://picsum.photos/id/1041/150/150?index=1`}
+                    src={`images/ak47.jpg`}
                     alt=""
                   />
                 </label>
@@ -212,7 +212,7 @@ export default function DescriptionCarousel() {
                   onClick={(event) => handleThumbnailClick(event, 2)}
                 >
                   <img
-                    src={`https://picsum.photos/id/1041/150/150?index=2`}
+                    src={`images/aug.jpg`}
                     alt=""
                   />
                 </label>
@@ -223,7 +223,7 @@ export default function DescriptionCarousel() {
                   onClick={(event) => handleThumbnailClick(event, 3)}
                 >
                   <img
-                    src={`https://picsum.photos/id/1041/150/150?index=3`}
+                    src={`images/awp.jpg`}
                     alt=""
                   />
                 </label>
@@ -234,7 +234,7 @@ export default function DescriptionCarousel() {
                   onClick={(event) => handleThumbnailClick(event,4)}
                 >
                   <img
-                    src={`https://picsum.photos/id/1041/150/150?index=4`}
+                    src={`images/deagle.jpg`}
                     alt=""
                   />
                 </label>
@@ -245,7 +245,7 @@ export default function DescriptionCarousel() {
                   onClick={(event) => handleThumbnailClick(event, 5)}
                 >
                   <img
-                    src={`https://picsum.photos/id/1041/150/150?index=5`}
+                    src={`images/kanas.jpg`}
                     alt=""
                   />
                 </label>
@@ -256,7 +256,7 @@ export default function DescriptionCarousel() {
                   onClick={(event) => handleThumbnailClick(event, 6)}
                 >
                   <img
-                    src={`https://picsum.photos/id/1041/150/150?index=6`}
+                    src={`images/pompali.jpg`}
                     alt=""
                   />
                 </label>
