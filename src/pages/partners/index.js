@@ -1,5 +1,6 @@
 import Layout from "@/lib/layout";
 import React from "react";
+import styles from "@/pages/partners/partners.module.scss"
 
 export default function Partners() {
   return (

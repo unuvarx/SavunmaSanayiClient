@@ -20,7 +20,7 @@ export default function Anasayfa() {
 
   useEffect(() => {
     gsap.from(navbarRef.current, {
-      y: 50,
+      y: 10,
       duration: 0.5,
       opacity: 0,
       ease: Power1.easeout,
