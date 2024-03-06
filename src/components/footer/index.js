@@ -8,7 +8,7 @@ import {
 } from "react-icons/ai";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
-import { CiMail } from "react-icons/ci";
+
 import { IoMail } from "react-icons/io5";
 import { IoIosTime } from "react-icons/io";
 import { FaWhatsapp } from "react-icons/fa";
@@ -41,7 +41,7 @@ export default function Footer() {
         >
           Sertifikalarımız
         </a>
-        <a href="/#"> Bize Ulaşın </a>
+        <a href="/connect"> Bize Ulaşın </a>
       </div>
       <div className={styles.icons}>
         <div>

@@ -212,10 +212,10 @@ export default function Navbar() {
               </div>
               <div
                 onClick={() => {
-                  router.push("/certificates");
+                  router.push("/connect");
                 }}
                 className={
-                  url === "/sales-history" ? styles.active : styles.deActive
+                  url === "/connect" ? styles.active : styles.deActive
                 }
               >
                 <span> BİZE ULAŞIN </span>
